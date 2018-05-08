@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Captec", "Captec\Captec.csproj", "{64861358-D5DF-4CC2-A023-A3E8D71785FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Captec.Tests", "Captec.Tests\Captec.Tests.csproj", "{4BB4A0CE-B4D8-47C4-9E5D-F676ED5F7B37}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64861358-D5DF-4CC2-A023-A3E8D71785FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64861358-D5DF-4CC2-A023-A3E8D71785FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64861358-D5DF-4CC2-A023-A3E8D71785FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64861358-D5DF-4CC2-A023-A3E8D71785FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BB4A0CE-B4D8-47C4-9E5D-F676ED5F7B37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BB4A0CE-B4D8-47C4-9E5D-F676ED5F7B37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BB4A0CE-B4D8-47C4-9E5D-F676ED5F7B37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BB4A0CE-B4D8-47C4-9E5D-F676ED5F7B37}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AF6DAA15-5B8A-4917-B349-3AD7FB140887}
+	EndGlobalSection
+EndGlobal

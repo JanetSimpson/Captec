@@ -1,0 +1,43 @@
+﻿@model Captec.Models.WordCloudViewModel
+
+@using (Html.BeginForm("WordCloud", "Home"))
+{
+    @*<h2>@ViewBag.Message</h2> *@
+    @* @Html.AntiForgeryToken() *@
+<div style="margin-left:20px;">
+    <div>
+        <br /><br />
+        <p>Enter the text source below.</p>
+        <br /><br />
+    </div>
+    <div style="width:500px;">
+        <div style="clear:both; display:block; width=100%;">
+            @Html.LabelFor(model => model.URL, "Web page URL:", new { style = "display:inline-block; float:left; width:40%; font-weight:normal;" })
+            <span style="display:inline-block; float:right; width:60%;">
+                @Html.EditorFor(model => model.URL, new { htmlAttributes = new { style = "float:right; width:100%;", placeholder = "e.g. https://www.captecsystems.com" } })
+                @Html.ValidationMessageFor(model => model.URL, String.Empty, new { style = "clear:both; display:block; margin-left: 20px; color:red;" })
+            </span>
+        </div>
+        <div style="clear:both; display:block; float:left; width:100%;">
+            <br />
+            <button type="submit" style="display:inline-block; float:right;">Submit</button>
+            <br />
+        </div>
+        <div>
+            <br /><br />
+            @if (!MvcHtmlString.IsNullOrEmpty(Model.WordCloud))
+            {
+                @Html.Raw(Model.WordCloud)
+            }
+            else
+            {
+                <span style="clear:both; display:block; float:left; width:80%; color:red;">@Html.Raw(Model.ErrorMessage)</span>
+            }
+            <br /><br />
+        </div>
+
+        @* @Html.HiddenFor(model => model.Occurrences) *@
+    </div>
+</div>
+}
+
